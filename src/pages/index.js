@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import styled from 'styled-components';
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 
 const BlogLink = styled(Link)`
@@ -11,24 +11,36 @@ const BlogLink = styled(Link)`
 `
 const BlogTitle = styled.h3`
   margin-bottom: 20px;
-  color: blue;
+  color: #2D3142;
+
+  &:hover {
+    color: #F0F757;
+  }
+`
+
+const BlogSnippet = styled.div`
+  width: 95%;
+  border: 3px solid #2D3142;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  background: #e49273;
 `
 
 export default ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <div>
-      <h1>Bailey's Brain</h1>
-      <h4>{data.allMarkdownRemark.totalCount}</h4>
+      <h2>My thoughts, {data.allMarkdownRemark.totalCount} things in mind...</h2>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
+        <BlogSnippet key={node.id}>
           <BlogLink to={node.fields.slug}>
             <BlogTitle>
               {node.frontmatter.title} - {node.frontmatter.date}
             </BlogTitle>
           </BlogLink>
           <p>{node.excerpt}</p>
-        </div>
+        </BlogSnippet>
       ))}
     </div>
   </Layout>
@@ -44,7 +56,7 @@ export const query = graphql`
           frontmatter {
             description
             title
-            date
+            date(formatString: "MMM DD YYYY")
           }
           fields {
             slug

@@ -11,15 +11,6 @@ My favorite way to go about coding lies in JavaScript or JS. JS is one of the mo
 
 Here is a description of this intuitive language from wikipedia on [JavaScript](https://en.wikipedia.org/wiki/JavaScript):
 
-> Ice cream (derived from earlier iced cream or cream ice)is
-> a sweetened frozen food typically eaten as a snack or
-> dessert. It may be made from dairy milk or cream, or soy,
-> cashew, coconut or almond milk, and is flavored with a
-> sweetener, either sugar or an alternative, and any spice,
-> such as cocoa or vanilla. Colourings are usually added, in
-> addition to stabilizers. The mixture is stirred to
-> incorporate air spaces and cooled below the freezing point
-> of water to prevent detectable ice crystals from forming.
-> The result is a smooth, semi-solid foam that is solid at
-> very low temperatures (below 2 °C or 35 °F). It becomes
-> more malleable as its temperature increases.
+> JavaScript (/ˈdʒɑːvəˌskrɪpt/),[6] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+
+> Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[8] JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it for client-side page behavior,[9] and all major web browsers have a dedicated JavaScript engine to execute it.
