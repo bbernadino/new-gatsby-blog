@@ -12,6 +12,12 @@ const BlogPost = styled.div`
   background: #e49273;
 `
 const PostContent = styled.div`
+  width: 100%;
+
+  iframe {
+    width: 100%;
+  }
+
   a {
     color: #2D3142;
   }
